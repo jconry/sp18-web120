@@ -1,0 +1,91 @@
+/* Jennifer's Portal Page Stylesheet   */
+
+/* Start GLOBAL RULES */
+
+html {
+    background-color: #ccc; /* Red Green Blue */
+}
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+   }
+
+
+h1>a {
+   text-decoration: none;
+    color:#000;
+}
+
+p {
+    margin-left:1em;
+    margin-right: 1em;
+}
+
+h1, h2, h3 {
+    margin-left:.5em;
+}
+
+/*Embed Responsibly Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+}
+
+div.embed-dontainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+footer {
+    clear: both;
+}
+
+/* End GLOBAL RULES */
+
+
+/* Start RESPONSIVE RULES */
+
+/*DESKTOP*/
+@media all and (min-width:1400px) {
+  
+    img.tablet, img.phone{
+        display:none;
+    }
+    
+  img.desktop {
+    width:50%;
+    float:right;  
+   }
+}
+
+
+/*TABLET*/
+@media all and (min-width:501px) and (max-width:1399px) {
+    
+    img.desktop, img.phone {
+        display:none;
+    }
+   img.tablet{
+        width:50%;
+        float:left;
+   }
+}
+/*PHONE*/
+@media all and (max-width:500px) {
+   
+    div.wrapper {
+        width:100%;
+    }
+    img.desktop, img.tablet {
+        display:none;
+    }
+}
+/* End RESPONSIVE RULES */
